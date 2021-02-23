@@ -10,7 +10,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Blog title={post.title} author={post.author} body={post.body} comments={post.comments[0]} />
+      <Blog title={post.title} author={post.author} body={post.body} comments={post.comments} />
     </div>
   );
 }
