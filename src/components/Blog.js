@@ -3,8 +3,8 @@ import Comment from "./Comment";
 
 const Blog = (props) => {
   const comments = props.comments;
-  const mappedComments = comments.map((comment) => {
-    return <Comment comment={comment} />;
+  const mappedComments = comments.map((comment, index) => {
+    return <Comment comment={comment} key={index} />;
   });
 
   return (
